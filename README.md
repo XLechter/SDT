@@ -36,3 +36,7 @@ For PCN
 
 For Compleiont3D:
 You can directly download the tranining files from Compleiont3D benchmark. Run `sh run.sh` and set `dataset` to `Completion3D`.
+
+## [Acknowledgement]
+Our codes are partly from [VRCNET](https://github.com/paul007pl/VRCNet). We sincerely thank for their contribution.
+
