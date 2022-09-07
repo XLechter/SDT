@@ -16,7 +16,7 @@ This code is built using Pytorch 1.7.1 with CUDA 10.2 and tested on Ubuntu 18.04
 The libs are included under `/util`, you need to first compile them where there is also a 'Readme.md' in each subfolder.
 
 ### 3)Download pre-trained models
-Download pre-trained models in `trained_model` folder from [Google Drive](https://drive.google.com/drive/folders/1Fzo-FZW3LhGqkIZkXAw5GV2UYae-bQjj?usp=sharing) and put them on `trianed_model` dir.
+Download pre-trained models in `trained_model` folder from [Google Drive](https://drive.google.com/file/d/1OlfBdK0707iGLkdn18VgXTrkSxylzqcj/view?usp=sharing) and put them on `trianed_model` dir.
 
 ### 4) Testing
 For PCN:
