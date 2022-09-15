@@ -1,5 +1,5 @@
 # Point Cloud Completion via Skeleton-Detail Transformer
-Codes for Point Cloud Completion via Skeleton-Detail Transformer. IEEE Transactions on Visualization and Computer Graphics (TVCG), 2022. See [IEEE PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp).
+Codes for Point Cloud Completion via Skeleton-Detail Transformer. IEEE Transactions on Visualization and Computer Graphics (TVCG), 2022. See [IEEE PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9804851).
 
 ![overview](overview.png)
 In this work, we present a coarse-to-fine completion framework, which makes full use of both neighboring and long-distance region cues for point cloud completion. Our network leverages a Skeleton-Detail Transformer, which contains cross-attention and self-attention layers, to fully explore the correlation from local patterns to global shape and utilize it to enhance the overall skeleton. Also, we propose a selective attention mechanism to save memory usage in the attention process without significantly affecting performance.
