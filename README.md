@@ -38,5 +38,5 @@ For Compleiont3D:
 You can directly download the tranining files from Compleiont3D benchmark. Run `sh run.sh` and set `dataset` to `Completion3D`.
 
 ## [Acknowledgement]
-Our codes are partly from [ECG](https://github.com/paul007pl/ECG.git.), [VRCNET](https://github.com/paul007pl/VRCNet). We sincerely thank for their contribution.
+Our codes are partly from [ECG](https://github.com/paul007pl/ECG), [VRCNET](https://github.com/paul007pl/VRCNet). We sincerely thank for their contribution.
 
