@@ -107,9 +107,9 @@ class Coarse_Fine_SA_Layer(nn.Module):
         energy = x_q @ x_k + rel_pos_emb  # b, n, n
         attention = self.softmax(energy)
         attention = attention / (1e-9 + attention.sum(dim=1, keepdims=True))
-        print('attention x_v', attention.shape)
-        print('attention[0][1]', attention[0][1])
-        print('max min', torch.max(attention[0][1]), torch.min(attention[0][1]))
+#         print('attention x_v', attention.shape)
+#         print('attention[0][1]', attention[0][1])
+#         print('max min', torch.max(attention[0][1]), torch.min(attention[0][1]))
         #plot_heatmap(attention[0].cpu().numpy(), pos=k_pos_original[0].cpu().numpy(), coarse_pos=q_pos_original[0].cpu().numpy())
         # print('x_q x_k x_v attention', x_q.shape, x_k.shape, x_v.shape, attention.shape)
         x_r = x_v @ attention.transpose(1, 2)  # b, c, n
@@ -768,11 +768,11 @@ class Model(nn.Module):
 
         print('coarse fine shape', x.transpose(1, 2).contiguous().cpu().numpy().shape, fine.cpu().numpy().shape)
 
-        global count
-        dirpath = '/mnt/data1/zwx/ICCV_SUB/results_sub'
-        plot_coarse_fine(x.transpose(1, 2).contiguous().cpu().numpy()[0], fine.cpu().numpy()[0])
-        plt.savefig(dirpath + '/' + str(count) + '.png')
-        count = count+1
+#         global count
+#         dirpath = '/mnt/data1/zwx/ICCV_SUB/results_sub'
+#         plot_coarse_fine(x.transpose(1, 2).contiguous().cpu().numpy()[0], fine.cpu().numpy()[0])
+#         plt.savefig(dirpath + '/' + str(count) + '.png')
+#         count = count+1
         return coarse, fine
 
 # if __name__ == '__main__':
