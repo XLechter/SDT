@@ -123,6 +123,6 @@ def test(args):
             log_test.log_string(
                 'CD_p: %f, CD_t: %f, F1: %f' % (test_loss_cd_p.avg, test_loss_cd_t.avg,
                                                         test_f1_score.avg))
-        pcd_file.close()
+        #pcd_file.close()
         log_test.close()
 
