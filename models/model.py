@@ -164,8 +164,7 @@ def plot_heatmap(heatmap, pos, coarse_pos):
 
     global count
 
-    # count = dircount('/mnt/data1/zwx/ICCV_SUB/heatmaps2')
-    dirpath = '/mnt/data1/zwx/ICCV_SUB/heatmaps2/' + str(count)
+    dirpath = '/mnt/data1/zwx/heatmaps2/' + str(count)
 
     #if count == 121 or count == 820 or count == 920:
     if count == 0:
@@ -193,10 +192,10 @@ def plot_heatmap1(heatmap, pos, coarse_pos):
     # pos = torch.squeeze(pos)
     print('pos.shape', pos.shape)
 
-    og_count = dircount('/mnt/data1/zwx/ICCV_SUB/heatmaps')
+    og_count = dircount('/mnt/data1/zwx/heatmaps')
 
-    count = dircount('/mnt/data1/zwx/ICCV_SUB/heatmaps1')
-    dirpath = '/mnt/data1/zwx/ICCV_SUB/heatmaps1/'+str(count)
+    count = dircount('/mnt/data1/zwx/heatmaps1')
+    dirpath = '/mnt/data1/zwx/heatmaps1/'+str(count)
     os.makedirs(dirpath)
 
     if count >= og_count:
